@@ -232,3 +232,41 @@ nav {
     }
 }
 
+/* Footer */
+
+footer {
+
+    .footer-row {
+        height: 150px;
+        align-items: center;
+    }
+
+    .socials {
+
+        display: flex;
+        padding-left: 5%;
+
+        a {
+            margin: 0 1%;
+            text-decoration: none;
+        }
+
+        .icon {
+            display: flex;
+            background-color: #000;
+            height: 45px;
+            width: 45px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+
+        i {
+            color: #fff;
+            font-size: 24px;
+        }
+
+        }
+
+
+    }
+}
