@@ -1,0 +1,141 @@
+/* Global */
+$text-light: #fff;
+$text-dark: #000;
+$color-primary: #fed136;
+$color-secondary: #000;
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.container {
+    padding: 0 10%;
+}
+
+button {
+    padding: 25px 70px;
+    font-size: 20px;
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.section-title {
+    margin-top: 100px;
+    text-align: center;
+
+    h3 {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+
+/* Navbar */
+
+nav {
+    position: absolute;
+    min-width: 100%;
+    padding-top: 45px;
+    font-size: 17px;
+    font-weight: 500;
+    z-index: 999;
+
+    a {
+        text-decoration: none;
+        color: $text-light;
+    }
+
+    .nav-row {
+        align-items: center;
+    }
+
+    .brand-name {
+        font-family: 'Dancing Script', cursive;
+        color: $color-primary;
+        font-size: 36px;
+    }
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+        padding: 0 25px;
+    }
+
+    li:last-of-type {
+        padding-right: 0;
+    }
+
+}
+
+/* Hero */
+
+.hero {
+    position: relative;
+    background-image: url("../images/hero-photo.jpg");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .hero-text {
+        position: relative;
+        color: $text-light;
+        margin-top: 10%;
+        text-align: center;
+
+        h1 {
+            font-size: 72px;
+            margin-top: 25px;
+        }
+
+        h2 {
+            font-size: 40px;
+            font-weight: 400;
+            font-family: 'Libre Baskerville', serif;
+            margin-bottom: 0;
+
+        }
+    }
+
+    .button-primary {
+        background-color: $color-primary;
+        color: $text-light;
+        font-weight: 700;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.4);
+}
+
