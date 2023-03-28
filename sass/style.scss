@@ -210,7 +210,7 @@ nav {
 
     img {
         height: 350px;
-        max-width: 100%;
+        width: 100%;
         object-fit: cover;
     }
 
@@ -269,4 +269,44 @@ footer {
 
 
     }
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 992px){
+    .container {
+        padding: 0;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px){
+.nav-links {
+    justify-content: flex-start;
+
+    li {
+        
+        margin-top: 5%;
+        padding: 0 10px;
+    }
+}
+
+.services {
+    flex-direction: column;
+
+    .service-card {
+        max-width: 100%;
+    }
+}
+
+.portfolio {
+    flex-direction: column;
+
+    .portfolio-card {
+        max-width: 100%;
+    }
+}
+
 }
