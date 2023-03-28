@@ -190,3 +190,45 @@ nav {
     }
 }
 
+/* Portfolio */
+
+.portfolio-section {
+    background-color: #f7f7f7;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.portfolio-card {
+    max-width: 31%;
+    margin-bottom: 50px;
+    background-color: #fff;
+
+    img {
+        height: 350px;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .card-caption {
+        text-align: center;
+        padding: 30px 0;
+
+        h4 {
+            font-size: 20px;
+            margin: 1%;
+        }
+
+        p {
+            margin: 0;
+            color: $text-medium;
+            font-family: $font-secondary;
+            font-style: italic;
+        }
+    }
+}
+
